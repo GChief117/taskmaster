@@ -189,4 +189,6 @@ SELECT * FROM executed_tasks;
 ## 📄 **License**
 MIT License 📜  
 
+Note: Apply npm install for both client and server directories
+
 ---
