@@ -19,10 +19,10 @@ Taskmaster is a **distributed task scheduler** that allows users to **create, sc
 **Task Types**:
   - **One-time tasks** - Runs once at a specified time and is then removed.
   - **Recurring tasks** - Uses **Cron syntax** to define repeated execution schedules.  
- **Task Logging** - Stores execution timestamps in a PostgreSQL database.  
- **React GUI** - A clean user interface to create, view, and delete tasks.  
- **Task Execution Simulation** - Instead of actually running code, **executions are logged** and displayed in the UI.  
- **Dockerized Environment** - All components run within **Docker containers**, ensuring easy deployment.  
+  - **Task Logging** - Stores execution timestamps in a PostgreSQL database.  
+  - **React GUI** - A clean user interface to create, view, and delete tasks.  
+  - **Task Execution Simulation** - Instead of actually running code, **executions are logged** and displayed in the UI.  
+  - **Dockerized Environment** - All components run within **Docker containers**, ensuring easy deployment.  
 
 ---
 
