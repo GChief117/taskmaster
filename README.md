@@ -190,9 +190,3 @@ SELECT * FROM executed_tasks;
 MIT License 📜  
 
 ---
- <div align="center">
-  <img src="task2.png" width="400" alt="Taskmaster UI">
-  <img src="task3.png" width="400" alt="Taskmaster UI">
-  <img src="task4.png" width="400" alt="Taskmaster UI">
-</div>
-
