@@ -185,8 +185,3 @@ SELECT * FROM executed_tasks;
 MIT License 📜  
 
 ---
-
-## 📩 **Contact**
-💬 **Questions?** Open an issue on GitHub or reach out at `your-email@example.com`.  
-
---
