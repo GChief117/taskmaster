@@ -1,6 +1,11 @@
 # Taskmaster - Distributed Task Scheduler  
  **React + TypeScript + Docker + PostgreSQL**
 
+ <div align="center">
+  <img src="taskmaster.png" width="400" alt="Taskmaster UI">
+</div>
+
+
 ---
 
 ## **Overview**
