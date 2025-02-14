@@ -173,7 +173,7 @@ SELECT * FROM executed_tasks;
 - **Cron Syntax Helper** - Displays cron examples for scheduling tasks.
 - **Scheduled Tasks List**  - Shows tasks before execution.
 - **Executed Tasks Log**  - Lists executed tasks with timestamps.
-- **Edit Tasks** ✏- Modify an existing scheduled task.
+- **Edit Tasks** - Modify an existing scheduled task.
 - **Delete Tasks** - Remove a scheduled or executed task.
 
 ---
