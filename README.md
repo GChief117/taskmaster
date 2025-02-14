@@ -181,7 +181,7 @@ SELECT * FROM executed_tasks;
 ## 🛠 **How Task Execution Works**
 1 The system **executes tasks within 10 seconds** of their scheduled time.  
 2 **One-Time Tasks** are **removed after execution** and logged in `executed_tasks`.  
-3 **Recurring Tasks** follow **Cron Syntax** and **continue executing** until deleted.  
+3 **Recurring Tasks** follow **Cron Syntax** and **continue executing** until deleted in the scheduld section.  
 4 **Tasks are only logged**, not actually executed.  
 
 ---
