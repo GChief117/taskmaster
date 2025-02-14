@@ -14,15 +14,15 @@ Taskmaster is a **distributed task scheduler** that allows users to **create, sc
 ---
 
 ## **Key Features**
-✅ **Task Registration** - Users can create tasks with execution times.  
-✅ **Task Execution** - Executes tasks **within 10 seconds** of their scheduled time.  
-✅ **Task Types**:
+ **Task Registration** - Users can create tasks with execution times.  
+**Task Execution** - Executes tasks **within 10 seconds** of their scheduled time.  
+**Task Types**:
   - **One-time tasks** - Runs once at a specified time and is then removed.
   - **Recurring tasks** - Uses **Cron syntax** to define repeated execution schedules.  
-✅ **Task Logging** - Stores execution timestamps in a PostgreSQL database.  
-✅ **React GUI** - A clean user interface to create, view, and delete tasks.  
-✅ **Task Execution Simulation** - Instead of actually running code, **executions are logged** and displayed in the UI.  
-✅ **Dockerized Environment** - All components run within **Docker containers**, ensuring easy deployment.  
+ **Task Logging** - Stores execution timestamps in a PostgreSQL database.  
+ **React GUI** - A clean user interface to create, view, and delete tasks.  
+ **Task Execution Simulation** - Instead of actually running code, **executions are logged** and displayed in the UI.  
+ **Dockerized Environment** - All components run within **Docker containers**, ensuring easy deployment.  
 
 ---
 
@@ -37,34 +37,34 @@ Taskmaster is a **distributed task scheduler** that allows users to **create, sc
 
 ---
 
-## 🎯 **System Architecture**
-1️⃣ **Frontend (React + TypeScript)**  
+## **System Architecture**
+1 **Frontend (React + TypeScript)**  
    - Users create and manage tasks.  
    - Displays scheduled and executed tasks in the UI.  
 
-2️⃣ **Backend (Node.js + Express + TypeScript)**  
+2 **Backend (Node.js + Express + TypeScript)**  
    - Handles task creation, execution, and logging.  
    - Executes tasks within 10 seconds of their scheduled time.  
 
-3️⃣ **Database (PostgreSQL)**  
+3 **Database (PostgreSQL)**  
    - Stores scheduled tasks.  
    - Logs executed tasks.  
 
-4️⃣ **Docker Containers**  
+4 **Docker Containers**  
    - Backend, Frontend, and Database run in **isolated containers**.  
    - Ensures seamless deployment.  
 
 ---
 
-## 🚀 **Getting Started**
+## **Getting Started**
 
-### 1️⃣ **Clone the Repository**
+### 1 **Clone the Repository**
 ```sh
 git clone https://github.com/your-username/taskmaster.git
 cd taskmaster
 ```
 
-### 2️⃣ **Start the Application using Docker Compose**
+### 2 **Start the Application using Docker Compose**
 ```sh
 docker compose up --build
 ```
@@ -75,10 +75,10 @@ This command:
 
 ---
 
-## 🛠 **Database Setup (PostgreSQL in Docker)**
+## **Database Setup (PostgreSQL in Docker)**
 We define two tables in PostgreSQL:
 
-### 1️⃣ **Creating the `tasks` Table**
+### 1 **Creating the `tasks` Table**
 ```sql
 CREATE TABLE tasks (
     id SERIAL PRIMARY KEY,
@@ -93,7 +93,7 @@ CREATE TABLE tasks (
 
 ---
 
-### 2️⃣ **Creating the `executed_tasks` Table**
+### 2 **Creating the `executed_tasks` Table**
 ```sql
 CREATE TABLE executed_tasks (
     id SERIAL PRIMARY KEY,
@@ -103,11 +103,11 @@ CREATE TABLE executed_tasks (
     executed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-📌 This table **logs executed tasks**.
+ This table **logs executed tasks**.
 
 ---
 
-## 🛠 **Docker PostgreSQL: How to Create Tables Step-by-Step**
+##  **Docker PostgreSQL: How to Create Tables Step-by-Step**
 ### Step 1: **Access the Database Container**
 ```sh
 docker exec -it taskmaster-db psql -U postgres -d taskmaster
@@ -150,7 +150,7 @@ SELECT * FROM executed_tasks;
 
 ---
 
-## 📡 **API Endpoints**
+## **API Endpoints**
 ### **Tasks (Scheduled)**
 | Method | Endpoint         | Description |
 |--------|-----------------|-------------|
@@ -167,27 +167,27 @@ SELECT * FROM executed_tasks;
 
 ---
 
-## 🎨 **Frontend (React UI)**
-### 🖥 **Features**
-- **Task Input Form** 📋 - Create both **One-Time** and **Recurring** tasks.
-- **Cron Syntax Helper** ⏳ - Displays cron examples for scheduling tasks.
-- **Scheduled Tasks List** 📅 - Shows tasks before execution.
-- **Executed Tasks Log** ✅ - Lists executed tasks with timestamps.
-- **Edit Tasks** ✏️ - Modify an existing scheduled task.
-- **Delete Tasks** ❌ - Remove a scheduled or executed task.
+## **Frontend (React UI)**
+###  **Features**
+- **Task Input Form** - Create both **One-Time** and **Recurring** tasks.
+- **Cron Syntax Helper** - Displays cron examples for scheduling tasks.
+- **Scheduled Tasks List**  - Shows tasks before execution.
+- **Executed Tasks Log**  - Lists executed tasks with timestamps.
+- **Edit Tasks** ✏- Modify an existing scheduled task.
+- **Delete Tasks** - Remove a scheduled or executed task.
 
 ---
 
 ## 🛠 **How Task Execution Works**
-1️⃣ The system **executes tasks within 10 seconds** of their scheduled time.  
-2️⃣ **One-Time Tasks** are **removed after execution** and logged in `executed_tasks`.  
-3️⃣ **Recurring Tasks** follow **Cron Syntax** and **continue executing** until deleted.  
-4️⃣ **Tasks are only logged**, not actually executed.  
+1 The system **executes tasks within 10 seconds** of their scheduled time.  
+2 **One-Time Tasks** are **removed after execution** and logged in `executed_tasks`.  
+3 **Recurring Tasks** follow **Cron Syntax** and **continue executing** until deleted.  
+4 **Tasks are only logged**, not actually executed.  
 
 ---
 
-## 📄 **License**
-MIT License 📜  
+## **License**
+MIT License 
 
 Note: Apply npm install for both client and server directories
 
