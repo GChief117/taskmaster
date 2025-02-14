@@ -9,7 +9,7 @@
 ---
 
 ## **Overview**
-Taskmaster is a **distributed task scheduler** that allows users to **create, schedule, and manage tasks** via a **React-based GUI**. Built with **TypeScript, PostgreSQL, and Docker**, Taskmaster enables seamless task execution and logging within a simple web app interface. The following work can be downloaded and played around with in the following link (https://drive.google.com/file/d/1-n8uanrGuML7TY0d2UwjwKEg5uIFrDUc/view?usp=sharing)
+Taskmaster is a **distributed task scheduler** that allows users to **create, schedule, and manage tasks** via a **React-based GUI**. Built with **TypeScript, PostgreSQL, and Docker**, The following work can be downloaded with the following link (https://drive.google.com/file/d/1-n8uanrGuML7TY0d2UwjwKEg5uIFrDUc/view?usp=sharing)
 
 ---
 
