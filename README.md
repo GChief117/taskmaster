@@ -26,14 +26,14 @@ Taskmaster is a **distributed task scheduler** that allows users to **create, sc
 
 ---
 
-## 🏗 **Technology Stack**
+## **Tech Stack**
 | Component    | Technology |
 |-------------|-----------|
-| 🖥 **Frontend** | React + TypeScript |
-| 🔙 **Backend** | Node.js + Express + TypeScript |
-| 🗄 **Database** | PostgreSQL |
-| 📦 **Containerization** | Docker + Docker Compose |
-| 📅 **Task Scheduling** | Cron Syntax |
+| **Frontend** | React + TypeScript |
+| **Backend** | Node.js + Express + TypeScript |
+| **Database** | PostgreSQL |
+| **Containerization** | Docker + Docker Compose |
+| **Task Scheduling** | Cron Syntax |
 
 ---
 
